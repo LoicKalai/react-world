@@ -1,9 +1,13 @@
 import React from "react";
+import Logo from "../components/Logo";
+import Navigation from "../components/Navigation";
 
 function About() {
   return (
     <div>
-      <h1>A propos</h1>
+      <Logo />
+      <Navigation />
+      <h1>À propos</h1>
       <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
