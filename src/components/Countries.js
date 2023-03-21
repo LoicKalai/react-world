@@ -15,7 +15,13 @@ function Countries() {
   return (
     <div className="countries">
       <ul className="radio-container">
-        <input type="range" min="1" max="250" />
+        <input
+          type="range"
+          min="1"
+          max="250"
+          defaultValue={rangeValue}
+          onChange={(e) => setRangeValue(e.target.value)}
+        />
       </ul>
       <ul>
         {data.slice(0, rangeValue).map((country, index) => (
